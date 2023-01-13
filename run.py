@@ -1,4 +1,5 @@
 import random
+import math
 
 name = input('Enter your name: ')
 print('Welcome to play this game', name,'good luck!')
@@ -7,11 +8,12 @@ print('Welcome to play this game', name,'good luck!')
 WINS = 0
 LOSSES = 0
 
-#
+
 def try_val(input_type, input_phrase):
     try:
         input_type = int(input(input_phrase))
-    except ValueError: 
+    except ValueError:# Instead a number the user types another character he is asked to type an integer
+        print('Please use an integer for input!')
         # If it gets a value error, it is going to run this function
         input_type = try_val(input_type, input_phrase)
     return int(input_type)
@@ -25,22 +27,25 @@ def new_game():
     global WINS, LOSSES 
     min_number, max_number = 0, 0
     # run through the function try_val
-    min_number = try_val(input_type, 'Enter a minimum number: ')
+    min_number = try_val(min_number, 'Please enter a minimum number: ')
     # Maximum number
-    max_number = int(input('Please enter maximum number: '))
+    max_number = try_val(max_number,'Please enter maximum number: ')
     # randint() generates random integers between min and max numbers.
     rand_number = random.randint(min_number, max_number)
     # Number of chances
-    chances = 3
+    # increase the user's chances according to the range between the minimum and maximum value 
+    chances = math.ceil(math.sqrt(max_number - min_number))
 
     """
     The while loop is running while the number of chances is greater than zero
     and each turn decreases a chance of the set value
     """
     while chances >= 0:
+        print(f' You have {chances} chances left!') # Say how many chances user left
         chances -= 1 # Take away one chance,when while loop is running
+        guess = 0 
         # Minimum and maximum number, running stored here
-        guess = int(input(f'Guess a number between {min_number} and {max_number}:'))    
+        guess = try_val(guess, f'Guess a number between {min_number} and {max_number}: ')  
 
     # Tell us if we guessed too high or low
         if guess > rand_number:
@@ -86,4 +91,4 @@ def new_game():
 new_game()            
     
 
-    # Keep score and give option to retry
+    
