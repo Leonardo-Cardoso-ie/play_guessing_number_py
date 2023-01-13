@@ -29,6 +29,11 @@ while chances >= 0:
 # Tell us if user are right or wrong
     elif guess == rand_number:
         print('You guesses correct!')
+        """
+        Prompt the user to play again and show how
+        many times won and loose.
+        """
+        play_again = input('Would you like to play again?')
 # Prompt if win or lose
 
 # Keep score and give option to retry
