@@ -54,13 +54,16 @@ def new_game():
             else:
                 quit() # When user say no, jus quit the game
     LOSSES += 1
-    print('You guesses correct!')
+    print('Sorry you ran out of chances!') # Notifies the user that his chances are over
     WINS += 1 # To add one to the WINS
     print(f'WINS - {WINS}  Losses - {LOSSES}')
-    play_again = input
+    play_again = input('Would you like to play again?') # Give the user option to play again 
+    if play_again == 'yes':
+        new_game()
+    else:
 
 
 new_game()            
-    # Prompt if win or lose
+    
 
     # Keep score and give option to retry
