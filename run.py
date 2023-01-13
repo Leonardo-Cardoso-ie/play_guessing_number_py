@@ -7,7 +7,14 @@ print('Welcome to play this game', name,'good luck!')
 WINS = 0
 LOSSES = 0
 
-
+#
+def try_val(input_type, input_phrase):
+    try:
+        input_type = int(input(input_phrase))
+    except ValueError: 
+        # If it gets a value error, it is going to run this function
+        input_type = try_val(input_type, input_phrase)
+    return int(input_type)
 
 
 """
@@ -16,7 +23,9 @@ and maximum numbers
 """
 def new_game():  
     global WINS, LOSSES 
-    min_number = int(input('Please enter minimum number: '))
+    min_number, max_number = 0, 0
+    # run through the function try_val
+    min_number = try_val(input_type, 'Enter a minimum number: ')
     # Maximum number
     max_number = int(input('Please enter maximum number: '))
     # randint() generates random integers between min and max numbers.
