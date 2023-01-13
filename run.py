@@ -3,6 +3,10 @@ import random
 name = input('Enter your name: ')
 print('Welcome to play this game', name,'good luck!')
 
+# globals variables to be interpreted throughout code
+WINS = 0
+LOSSES = 0
+
 """
 Create a function to run all the way from create minimum
 and maximum numbers
