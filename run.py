@@ -7,13 +7,15 @@ print('Welcome to play this game', name,'good luck!')
 WINS = 0
 LOSSES = 0
 
+
+
+
 """
 Create a function to run all the way from create minimum
 and maximum numbers
 """
-
 def new_game():  
-    # Minimum number
+    globals WINS, LOSSES 
     min_number = int(input('Please enter minimum number: '))
     # Maximum number
     max_number = int(input('Please enter maximum number: '))
@@ -39,7 +41,8 @@ def new_game():
     # Tell us if user are right or wrong
         elif guess == rand_number:
             print('You guesses correct!')
-            print('WINS - {}  Losses-') # Scoreboard
+            WINS += 1 # To add one to the WINS
+            print(f'WINS - {WINS}  Losses - {LOSSES}') # Scoreboard
            
             """
             Prompt the user to play again and show how
@@ -50,6 +53,11 @@ def new_game():
                 new_game() # If statement say yes, run this function again
             else:
                 quit() # When user say no, jus quit the game
+    LOSSES += 1
+    print('You guesses correct!')
+    WINS += 1 # To add one to the WINS
+    print(f'WINS - {WINS}  Losses - {LOSSES}')
+    play_again = input
 
 
 new_game()            
