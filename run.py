@@ -11,18 +11,24 @@ max_number = int(input('Please enter maximum number: '))
 rand_number = random.randint(min_number, max_number)
 # Number of chances
 chances = 3
- """
+
+"""
 The while loop is running while the number of chances is greater than zero
 and each turn decreases a chance of the set value
-    """
+"""
 while chances >= 0:
-    chances -= 1
-    guess = int(input('Guess a number between _ and _ '))    
+    chances -= 1 # Take away one chance,when while loop is running
+    # Minimum and maximum number, running stored here
+    guess = int(input(f'Guess a number between {min_number} and {max_number}:'))    
 
 # Tell us if we guessed too high or low
-
-# Tell us if we are right or wrong
-
+    if guess > rand_number:
+        print('Too high!')
+    elif guess < rand_number:
+        print('Too low!')     
+# Tell us if user are right or wrong
+    elif guess == rand_number:
+        print('You guesses correct!')
 # Prompt if win or lose
 
 # Keep score and give option to retry
