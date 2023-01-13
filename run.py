@@ -35,11 +35,20 @@ def new_game():
     # Tell us if user are right or wrong
         elif guess == rand_number:
             print('You guesses correct!')
+            print('WINS - {}  Losses-') # Scoreboard
+           
             """
             Prompt the user to play again and show how
             many times won and loose.
             """
-            if play_again = input('Would you like to play again?')
+            play_again = input('Would you like to play again?')
+            if play_again == 'yes':
+                new_game() # If statement say yes, run this function again
+            else:
+                quit() # When user say no, jus quit the game
+
+
+new_game()            
     # Prompt if win or lose
 
     # Keep score and give option to retry
