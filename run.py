@@ -15,7 +15,7 @@ Create a function to run all the way from create minimum
 and maximum numbers
 """
 def new_game():  
-    globals WINS, LOSSES 
+    global WINS, LOSSES 
     min_number = int(input('Please enter minimum number: '))
     # Maximum number
     max_number = int(input('Please enter maximum number: '))
@@ -49,11 +49,11 @@ def new_game():
             many times won and loose.
             """
             play_again = input('Would you like to play again?')
-    """
-    The code was modified to make it easier for the user,
-    that instead of typing the word yes to continue the game,
-    he just clicks on the letter y or number 1
-    """
+            """
+            The code was modified to make it easier for the user,
+            that instead of typing the word yes to continue the game,
+            he just clicks on the letter y or number 1
+            """
             if 'y'.lower() in play_again or '1' in play_again:
                 new_game() # If statement say yes, run this function again
             else:
