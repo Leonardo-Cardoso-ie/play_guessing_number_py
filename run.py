@@ -57,9 +57,9 @@ def new_game():
                                f'and {max_number}: ')
         # Tell us if we guessed too high or low
         if guess > rand_number:
-            print('Too high!')
+            print('Your Guess is upper than my number!')
         elif guess < rand_number:
-            print('Too low!')
+            print('Your Guess is lower than my number!')
         # Tell us if user are right or wrong
         elif guess == rand_number:
             print('You guesses correct!')
