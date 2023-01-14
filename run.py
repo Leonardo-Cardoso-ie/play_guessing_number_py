@@ -3,7 +3,7 @@ import math
 
 name = input('Enter your name: ')
 print('---------------------------------------------------------------')
-print('Welcome to play PYTHON Number Guessing', ',', name, 'good luck!')
+print('Welcome to play: PYTHON Number Guessing', ',', name, 'good luck!')
 print('---------------------------------------------------------------')
 
 # globals variables to be interpreted throughout code
@@ -31,7 +31,6 @@ minimum and maximum numbers
 
 
 def new_game():
-
 
     global WINS, LOSSES
 
