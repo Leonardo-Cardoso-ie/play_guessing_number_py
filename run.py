@@ -20,14 +20,19 @@ def try_val(input_type, input_phrase):
         # If it gets a value error, it is going to run this function
         input_type = try_val(input_type, input_phrase)
     return int(input_type)
+
+
 """
 Create a Function to run all to way to create
 minimum and maximum numbers
 """
+
+
 def new_game():
-    
+
+
     global WINS, LOSSES
- 
+
     min_number, max_number = 0, 0
     # run through the function try_val
     min_number = try_val(min_number, 'Please enter a minimum number: ')
@@ -51,17 +56,16 @@ def new_game():
         guess = try_val(guess, f'Guess a number between {min_number}'
                                f'and {max_number}: ')
         # Tell us if we guessed too high or low
-        
         if guess > rand_number:
             print('Too high!')
         elif guess < rand_number:
-            print('Too low!')     
+            print('Too low!')
         # Tell us if user are right or wrong
         elif guess == rand_number:
             print('You guesses correct!')
             WINS += 1  # To add one to the WINS
             print(f'WINS - {WINS}  Losses - {LOSSES}')  # Scoreboard
-       
+
             """
             Prompt the user to play again and show how
             many times won and loose.
@@ -78,11 +82,11 @@ def new_game():
                 quit()  # When user say no, just quit the game
     LOSSES += 1
     # Notifies the user that his chances are over
-    print('Sorry you ran out of chances!') 
+    print('Sorry you ran out of chances!')
     WINS += 1  # To add one to the WINS
     print(f'WINS - {WINS}  Losses - {LOSSES}')
-    # Give to the the user option to play again 
-    play_again = input('Would you like to play again?')  
+    # Give to the the user option to play again
+    play_again = input('Would you like to play again?')
 
     """
     The code was modified to make it easier for the user,
