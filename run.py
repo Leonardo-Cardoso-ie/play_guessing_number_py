@@ -2,7 +2,9 @@ import random
 import math
 
 name = input('Enter your name: ')
-print('Welcome to play this game', name, 'good luck!')
+print('---------------------------------------------------------------')
+print('Welcome to play PYTHON Number Guessing', ',', name, 'good luck!')
+print('---------------------------------------------------------------')
 
 # globals variables to be interpreted throughout code
 WINS = 0
@@ -54,7 +56,7 @@ def new_game():
         guess = 0
         # Minimum and maximum number, running stored here
         guess = try_val(guess, f'Guess a number between {min_number}'
-                               f'and {max_number}: ')
+                               f' and {max_number}: ')
         # Tell us if we guessed too high or low
         if guess > rand_number:
             print('Your Guess is upper than my number!')
@@ -70,7 +72,8 @@ def new_game():
             Prompt the user to play again and show how
             many times won and loose.
             """
-            play_again = input('Would you like to play again?  ')
+            print('Would you like to play again?')
+            play_again = input('yes - Press y or 1 / no - Press any : ')
             """
             The code was modified to make it easier for the user,
             that instead of typing the word yes to continue the game,
@@ -86,7 +89,8 @@ def new_game():
     WINS += 1  # To add one to the WINS
     print(f'WINS - {WINS}  Losses - {LOSSES}')
     # Give to the the user option to play again
-    play_again = input('Would you like to play again?')
+    print('Would you like to play again?')
+    play_again = input('yes : y or 1 and enter / no : any and enter : ')
 
     """
     The code was modified to make it easier for the user,
@@ -96,6 +100,7 @@ def new_game():
     if 'y'.lower() in play_again or '1' in play_again:
         new_game()
     else:
+        print('See you next time', name, '!')
         quit()
 
 
