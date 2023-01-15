@@ -1,10 +1,10 @@
 import random
 import math
 
-name = input('Enter your name: ')
-print('---------------------------------------------------------------')
-print('Welcome to play: PYTHON Number Guessing', ',', name, 'good luck!')
-print('---------------------------------------------------------------')
+name = input('Enter your name: \n')
+print('---------------------------------------------------------------\n')
+print('Welcome to play: PYTHON Number Guessing', ',', name, 'good luck!\n')
+print('---------------------------------------------------------------\n')
 
 # globals variables to be interpreted throughout code
 WINS = 0
@@ -18,7 +18,7 @@ def try_val(input_type, input_phrase):
     # If an user types another character he asked to type an integer
 
     except ValueError:
-        print('Please use an integer for input!')
+        print('Please use an integer for input!\n')
         # If it gets a value error, it is going to run this function
         input_type = try_val(input_type, input_phrase)
     return int(input_type)
@@ -36,9 +36,9 @@ def new_game():
 
     min_number, max_number = 0, 0
     # run through the function try_val
-    min_number = try_val(min_number, 'Please enter a minimum number: ')
+    min_number = try_val(min_number, 'Please enter a minimum number: \n')
     # Maximum number
-    max_number = try_val(max_number, 'Please enter maximum number: ')
+    max_number = try_val(max_number, 'Please enter maximum number: \n')
     # randint() generates random integers between min and max numbers.
     rand_number = random.randint(min_number, max_number)
     # Number of chances
@@ -58,12 +58,12 @@ def new_game():
                                f' and {max_number}: ')
         # Tell us if we guessed too high or low
         if guess > rand_number:
-            print('Your Guess is upper than my number!')
+            print('Your Guess is upper than my number!\n')
         elif guess < rand_number:
-            print('Your Guess is lower than my number!')
+            print('Your Guess is lower than my number!\n')
         # Tell us if user are right or wrong
         elif guess == rand_number:
-            print('You guesses correct!')
+            print('You guesses correct!\n')
             WINS += 1  # To add one to the WINS
             print(f'WINS - {WINS}  Losses - {LOSSES}')  # Scoreboard
 
@@ -71,8 +71,8 @@ def new_game():
             Prompt the user to play again and show how
             many times won and loose.
             """
-            print('Would you like to play again?')
-            play_again = input('yes - Press y or 1 / no - Press any : ')
+            print('Would you like to play again?\n')
+            play_again = input('yes - Press y or 1 / no - Press any : \n')
             """
             The code was modified to make it easier for the user,
             that instead of typing the word yes to continue the game,
@@ -84,12 +84,12 @@ def new_game():
                 quit()  # When user say no, just quit the game
     LOSSES += 1
     # Notifies the user that his chances are over
-    print('Sorry you ran out of chances!')
+    print('Sorry you ran out of chances!\n')
     WINS += 1  # To add one to the WINS
     print(f'WINS - {WINS}  Losses - {LOSSES}')
     # Give to the the user option to play again
     print('Would you like to play again?')
-    play_again = input('yes : y or 1 and enter / no : any and enter : ')
+    play_again = input('yes : y or 1 and enter / no : any and enter : \n')
 
     """
     The code was modified to make it easier for the user,
@@ -99,7 +99,7 @@ def new_game():
     if 'y'.lower() in play_again or '1' in play_again:
         new_game()
     else:
-        print('See you next time', name, '!')
+        print('See you next time', name, '!\n')
         quit()
 
 
