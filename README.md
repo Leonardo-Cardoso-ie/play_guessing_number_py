@@ -2,90 +2,11 @@
 
 Python Number Guessing is a Python terminal game, wich runs in the Code Institute mock terminal on Heroku
 
-## How to play 
+The number guessing game is a popular game among programmers, In the number guessing game, the user selects a random number between two numbers, minimum and maximum number and the user try guesses the correct number in a maximum of chances. The game will end after x chances and if the player feiled to guess the number, and then he loses the game.
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-## Features
-
-- __Logo__
-
-  - The logo was developed in the Oswald font and in orange, alluding to one of the colors of the Irish flag, a strong color and highlighting the name of the project The Dublin Soundtrack.
-  
-![__Logo__](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/logo.png)
-
-- __Navigation bar__
-
-  - Featured with five sections, the full responsive bar includes links to the Home page, The project section, Find us, Gallery and Join us. 
-  - This section will allow the user to easily navigate through the landing page across all devices. Upon clicking, the user is directed to the corresponding section.
-
-![Navigation_bar](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/navbar.png)
-
-- __The Header/Homepage__
-
-  - The first page, where the logo is and the navigation bar, with a vinyl recording disc, in blue color, the user from the beginning, already has a notion that the content is about music, he clicks on the sections in the bar and the page opens smoothly, displaying the project section and a photo of Dublin as the Background
- 
-
-![The_homepage](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/homepage.png)
-- __The Project__
-
-  - The project section starts with a small introduction and then talks about the project, about what motivated the realization of this great project.
-  - The user begins to understand the project and feels motivated to participate, as he can have the chance to have his music recorded on The Dublin Soundtrack collection and still have the chance to show his music. 
-  - 
-![The project](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/theproject.png)
-
-- __Find us__ 
-
-  - The section Where to Find us serves to guide the user where they can find us, including a contact number, an email address and  a opening hours timetable.
-  - Address and contact related to Gisela Records Label that is in partnership with our project. 
-
-![Find_us](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/find_us.png)
-
-- __Maps__
-
-  - below there is a map from google maps giving showing how the user can find us,
-  
-
-![maps](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/map.png)
-
-- __Footer__
-
-  -The footer section includes links to the relevant social media sites (Facebook, Instagram, Twitter and Youtube) for The Dublin Soundtrack. The links will open to a new tab to allow easy navigation for the user.
-  
-![footer](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/footer.png)
-
- __Gallery__
-
-  - The photo gallery and header featured with five sections, the full responsive bar includes links to the Home page, The project section, Find us, Gallery and Join us, as this gallery celebrates the partnership with the label Gisela Records and the photos of famous artists who passed through the label.
-  
-
-![gallery](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/headergallery.png)
-
- __Gallery__
-
-  - The Photo Gallery shows our great partners from the label, Mano Scoob among other celebrities, a responsive gallery that at the end has a button, indicating return to the top of the page.
-  
-
-![Gallery](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/gallery1.png)
+The Live link can be found here: https://python-number-guessing.herokuapp.com/
 
 
-![gallery](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/gallery2.png)
-
- __Join us__
-
-  - The Join us session explains to the user what the project is looking for, talks about the award and motivates the user to participate in the project.
-  
-
-![Join_us](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/formheader.png)
-
-__Sign up Form__
-
-  - The user fills in a form to be able to sign up for The Soundtrack Project, to participate, the user answers a series of questions and talks about their skills in the music field.
-  
-
-![Join_us](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/form.png)
-
-![Join_us](https://github.com/Leonardo-Cardoso-ie/the_dublin_soundtrack/blob/main/form2.png)
 
 
 ## Testing 
