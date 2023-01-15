@@ -72,7 +72,7 @@ def new_game():
             many times won and loose.
             """
             print('Would you like to play again?\n')
-            play_again = input('yes - Press y or 1 / no - Press any : \n')
+            play_again = input('yes : y or 1 and enter / no : any and enter: ')
             """
             The code was modified to make it easier for the user,
             that instead of typing the word yes to continue the game,
@@ -89,7 +89,7 @@ def new_game():
     print(f'WINS - {WINS}  Losses - {LOSSES}')
     # Give to the the user option to play again
     print('Would you like to play again?')
-    play_again = input('yes : y or 1 and enter / no : any and enter : \n')
+    play_again = input('yes : y or 1 and enter / no : any and enter : ')
 
     """
     The code was modified to make it easier for the user,
