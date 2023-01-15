@@ -81,6 +81,7 @@ def new_game():
             if 'y'.lower() in play_again or '1' in play_again:
                 new_game()  # If statement say yes, run this function again
             else:
+                print('See you next time', name, '!')
                 quit()  # When user say no, just quit the game
     LOSSES += 1
     # Notifies the user that his chances are over
