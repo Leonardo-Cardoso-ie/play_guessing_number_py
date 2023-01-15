@@ -6,7 +6,7 @@ The number guessing game is a popular game among programmers, In the number gues
 
 The Live link can be found here: https://python-number-guessing.herokuapp.com/
 
-![responsive](https://user-images.githubusercontent.com/96269648/212520645-d90a17c4-7fb8-4992-a5ae-c9e33ff40538.png)
+  ![responsive](https://user-images.githubusercontent.com/96269648/212520645-d90a17c4-7fb8-4992-a5ae-c9e33ff40538.png)
 
 
 ## **How to play**
@@ -21,11 +21,12 @@ In this version of Python number Guessing, the player enters their name and when
 User interface display 
 
   - The user is asked to enter his name
+  
   - When entering the name, the player receives a welcome message and good luck
   - After the welcome message, the player is asked to enter a minimum number and then enter a maximum number.
 
   
-  ![screen1](https://user-images.githubusercontent.com/96269648/212523974-a37df5d3-4372-4ab9-a354-09ca9c69a43b.png) 
+    ![screen1](https://user-images.githubusercontent.com/96269648/212523974-a37df5d3-4372-4ab9-a354-09ca9c69a43b.png) 
  
  
 
@@ -36,7 +37,7 @@ User interface display
   - Your Guess is lower than my number or your Guess is upper than my number!
 
 
-![screen3](https://user-images.githubusercontent.com/96269648/212525297-3998814a-5770-452f-bb92-3fe8946aadd7.png)
+     ![screen3](https://user-images.githubusercontent.com/96269648/212525297-3998814a-5770-452f-bb92-3fe8946aadd7.png)
 
 
 
@@ -49,7 +50,7 @@ User interface display
   
   
 
-![Imagem1](https://user-images.githubusercontent.com/96269648/212526873-cccd16d1-321f-460e-aa7b-25dc74bfa6fd.png)
+      ![Imagem1](https://user-images.githubusercontent.com/96269648/212526873-cccd16d1-321f-460e-aa7b-25dc74bfa6fd.png)
 
 
 ### Input validation and error - checking:
@@ -59,35 +60,66 @@ User interface display
   -As long as the player does not enter an integer, the message is repeated and the game continues after typing an integer.
 
 
- ![screen4](https://user-images.githubusercontent.com/96269648/212527677-a2f4feeb-1482-43a6-a654-3cbece93086c.png)
+       ![screen4](https://user-images.githubusercontent.com/96269648/212527677-a2f4feeb-1482-43a6-a654-3cbece93086c.png)
  
  
 
- ##Testing
-- HTML
-  - No errors were returned when passing through the official] https://validator.w3.org/
-  - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?
-  - Lighthouse test
+### Validator Testing 
+
+- Python (PEP8)
+
+  - No errors were found when passing and testing through my local terminal
   
-  ![Imag000](https://user-images.githubusercontent.com/96269648/187071421-14520190-3e09-4700-a7a6-4aac6381319a.png)
+   ![img9](https://user-images.githubusercontent.com/96269648/212539925-1ba93e7f-6d57-4701-8645-9651e2f53cad.png)
 
+  - No errors were returned when passing through Code Institute Heroku terminal
+
+   ![img8](https://user-images.githubusercontent.com/96269648/212540418-b1e11406-c35c-4658-a851-b350c8570bfb.png)
+
+  
   
 ## Deployment
 
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
+- This project was deployed using Code Institute's Mosck terminal:
+ ### Steps for deployment: To Heroku
+  ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+  - Fork this repository
+  - Sign in in Heroku and create anew Heroku app
+  - Set the buildpacks to : (In that order)
+
+     ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)  
+     ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+   
+  - Link the Heroku app to repository
+  - Click on **Deploy**
+
+  ### Steps for deployment: To GitHub
+  
+  - In the GitHub repository, navigate to the Settings tab
+
   - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
+  ### Bugs
 
+- During the project development process, the biggest problem I encountered was when code was indented, in accordance with PEP8 standards, as a 
+series of blank lines were found, a number of characters above the PEP8 default value, which was one of the processes that took a long time, to finalize the project and the code to have a better fluidity.
+
+- This same indentation problem caused a small bug in the terminal, but because I activated automatic updates when updating and pushing to the repository, the problem was solved
+
+   
+   
 
 ## Credits 
 
-The logo image was taken from icons8.com
+  - Code Institute for the deployment terminal
+  - To understand how the logic of a Guessing game works, I used content found at this link: https://everythingcomputerscience.com/DivideandConquerAlgorithm.html
+ 
 
 
-# Special Thanks
+## Special Thanks
 
-- My special thanks go out to my family, my wife and my son, they know how hard it has been but they believe in me and the Code Institute 
+- My special thanks go out to my family, my wife and my son, they know how hard it has been but they believe in me and The Code Institute
+
